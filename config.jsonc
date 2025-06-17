@@ -1,0 +1,141 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/Project/code/fastfetch_config/asset/Zeraora.png", // replace this with the real path
+    "padding": {
+      "top": 3
+    },
+    "type": "kitty-direct",
+    "width": 35
+  },
+  "display": {
+    "separator": " ─┤ ",
+    "color": {
+      "keys": "yellow",
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "╭───────┬──────────────────────╮",
+      "outputColor": "blue"
+    },
+    {
+      "type": "title",
+      "key": "│  󰨉  ",
+      "format": "{1}",
+      "keyColor": "white",
+      "outputColor": "white"
+    },
+    {
+      "type": "custom",
+      "format": "├───────┼───Software───────────┤"
+    },
+    {
+      "type": "os",
+      "key": "│  \uebc9  ",
+      "format": "{3}",
+      "outputColor": "red"
+    },
+        {
+      "type": "kernel",
+      "key": "│  \uf31a  ",
+      "format": "{2}",
+      "keyColor": "white",
+      "outputColor": "white"
+    },
+    {
+      "type": "shell",
+      "key": "│  \ue691  ",
+      "keyColor": "green",
+      "outputColor": "green"
+    },
+    {
+      "type": "de",
+      "key": "│  \uf361  ",
+      "keyColor": "red",
+      "outputColor": "red"
+    },
+    {
+
+      "type": "wm",
+      "key": "│  \uf367  ",
+      "keyColor": "blue",
+      "outputColor": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": "│  \ue795  ",
+      "format": "{1}",
+      "keyColor": "bright_",
+      "outputColor": "bright_"
+    },
+    {
+      "type": "custom",
+      "format": "├───────┼───Hardware───────────┤",
+      "outputColor": "blue"
+    },
+    {
+      "type": "host",
+      "key": "│  \uf109  ",
+      "format": "{2}",
+      "keyColor": "cyan",
+      "outputColor": "cyan"
+    },
+    {
+      "type": "cpu",
+      "key": "│  Cpu",
+      "format": "{1}",
+      "keyColor": "magenta",
+      "outputColor": "magenta"
+    },
+    {
+      "type": "gpu",
+      "key": "│  Gpu",
+      "format": "{2}",
+      "keyColor": "red",
+      "outputColor": "red"
+    },
+    {
+      "type": "memory",
+      "key": "│  Ram",
+      "format": "{1}/{2}",
+      "keyColor": "green",
+      "outputColor": "green"
+    },
+    {
+      "type": "disk",
+      "key": "│  Ssd",
+      "format": "{1}/{2}",
+      "keyColor": "blue",
+      "outputColor": "blue"
+    },
+    {
+      "type": "custom",
+      "format": "├───────┼───Uptime&Age─────────┤"
+    },
+    {
+      "type": "uptime",
+      "key": "│  󱡼  ",
+      "format": "{2}h-{3}m",
+      "keyColor": "white",
+      "outputColor": "white"
+    },
+    {
+    "type": "command",
+    "key": "│  󰃰  ",
+    "keyColor": "white",
+    "outputColor": "white",
+    "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo $days_difference days"
+    },
+    {
+      "type": "custom",
+      "format": "╰───────┴──────────────────────╯"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "triangle"
+    }
+  ]
+}
